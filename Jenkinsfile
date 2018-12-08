@@ -9,25 +9,25 @@ pipeline
 	{
 	stage('Install') 
 	  {
-            //steps 
-        	//{  
-	        //bat 'mvn clean install'
-              // }
+            steps 
+        	{  
+	        bat 'mvn clean install'
+               }
           }
 		
 	stage('Deploy') 
 	  {
-           // steps 
-        	//{  
-	        //bat 'mvn clean deploy'
-               //}
+            steps 
+        	{  
+	        bat 'mvn clean deploy'
+               }
           }
 	stage('Prepare') 
 	  {
-           // steps 
-        	//{  
-	        //bat 'mvn clean release:prepare'
-               //}
+            steps 
+        	{  
+	        bat 'mvn clean release:prepare'
+               }
           }
 	stage('Release') 
 	  {
