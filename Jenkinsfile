@@ -33,7 +33,7 @@ pipeline
 	  {
             steps 
         	{  
-	        bat 'mvn clean release:prepare'
+	        bat 'mvn clean release:perform'
                }
           }
 		
