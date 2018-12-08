@@ -7,11 +7,11 @@ pipeline
     }
     stages 
 	{
-	stage('Build') 
+	stage('Install') 
 	  {
             steps 
         	{  
-	        bat 'mvn clean install'
+	        //bat 'mvn clean install'
                }
           }
 		
@@ -19,10 +19,17 @@ pipeline
 	  {
             steps 
         	{  
-	        bat 'mvn clean deploy'
+	        //bat 'mvn clean deploy'
                }
           }
 	stage('Prepare') 
+	  {
+            steps 
+        	{  
+	        //bat 'mvn clean release:prepare'
+               }
+          }
+	stage('Release') 
 	  {
             steps 
         	{  
