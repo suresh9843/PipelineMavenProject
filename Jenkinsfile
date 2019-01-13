@@ -22,6 +22,7 @@ pipeline
 	        bat 'mvn clean deploy'
                }
           }
+  /*
 	stage('Prepare') 
 	  {
             steps 
@@ -36,7 +37,7 @@ pipeline
 	        bat 'mvn clean release:perform'
                }
           }
-		
+	*/	
 	/*	
 	  stage('Checking Echo') 
 	  {
